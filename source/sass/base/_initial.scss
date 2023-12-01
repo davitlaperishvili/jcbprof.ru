@@ -2291,7 +2291,7 @@ a.banner_text::before, a.banner_text::after{
 /************************End Category List Cms**********************/
 
 /***********************Homepage Special Product********************/
-#content .product-carousel .product-block-inner, #content .box-product .product-block-inner, .category_tab .tab-pane .product-block-inner {
+#content .product-carousel .product-block-inner,#content .product-carousel-custom .product-block-inner, #content .box-product .product-block-inner, .category_tab .tab-pane .product-block-inner {
     text-align: center;
     overflow: visible;
     display: inline-block;
@@ -4306,7 +4306,7 @@ a.list-group-item:focus, a.list-group-item:hover, button.list-group-item:focus, 
 	-moz-transform:none;
 }
 #column-left .product-thumb .caption{min-height:0px;}
-#special-carousel .product-carousel .product-thumb .caption{padding:10px;}
+#special-carousel .product-carousel .product-thumb .caption,#special-carousel .product-carousel-custom .product-thumb .caption{padding:10px;}
 .account-wishlist table .text-center img {border: 1px solid #e5e5e5;}
 .pagination-wrapper .active > span {
 	background: #020202 none repeat scroll 0 0 !important;
@@ -4698,7 +4698,7 @@ h2.price {margin: 0;}
 .tabspecial_default_width{width:240px;}
 .tabbestseller_default_width{width:240px;}
 .additional_default_width{ width:100px;}
-#content .banners-slider-carousel .product-carousel .product-block-inner,#content .banners-slider-carousel .product-grid .product-block-inner{text-align:center;}
+#content .banners-slider-carousel .product-carousel .product-block-inner,#content .banners-slider-carousel .product-carousel-custom .product-block-inner,#content .banners-slider-carousel .product-grid .product-block-inner{text-align:center;}
 .product_hover_block {
 	position: absolute;
 	right: -10px;
@@ -5111,7 +5111,7 @@ h2.price {margin: 0;}
 	width: 100%;
 	float: left;
 }
-.banners-slider-carousel .product-carousel .slider-wrapper-outer{ padding: 0; }
+.banners-slider-carousel .product-carousel .slider-wrapper-outer,.banners-slider-carousel .product-carousel-custom .slider-wrapper-outer{ padding: 0; }
 #column-left .box-product,
 #column-right .box-product {
 	width: 100%;

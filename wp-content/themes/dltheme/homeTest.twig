@@ -1,55 +1,1347 @@
 {{ header }}
-{{ column_left }}
-    {% if column_left and column_right %}
-    {% set class = 'col-sm-6' %}
-    {% elseif column_left or column_right %}
-    {% set class = 'col-sm-9' %}
-    {% else %}
-    {% set class = 'col-sm-12' %}
-    {% endif %}
-
-<style>
-    .content-top-breadcum{
-        display: none!important;
-    }
-    #content{
-        padding: 0!important;
-        float: left!important;
-        width: 100%!important;
-    }
-</style>
-
-    <div id="content" class="{{ class }}">
-        <div class="content-top">   
-             {{ content_top }}
+<main class="dl_theme page_wrapper">
+  <section class="hero">
+    <div class="container">
+      <div class="hero_grid">
+        <div class="hero_banner left">
+          <figure>
+            <img src="catalog/view/theme/Gobazar/image/images/hero1.jpg" alt="">
+          </figure>
+          <div class="banner_content">
+            <div class="text"><span>13 дней</span> осталось</div>
+            <div class="banner_button text">
+              <a href="#">Перейти в каталог</a>
+            </div>
+          </div>
         </div>
-        {# <div class="container">
-            <div class="row"> #}
-    {{ content_bottom }}
-    {# </div></div> #}
-    {{ column_right }}
+        <div class="hero_banners_slider_wrap">
+          <div class="hero_banners_slider owl-carousel">
+            <div class="hero_slider_item">
+              <figure>
+                <img src="catalog/view/theme/Gobazar/image/images/hero_slide1.jpg" alt="">
+              </figure>
+              <div class="banner_content">
+                <div class="banner_title">КАЧЕСТВО <br> <span>ПО ЛУЧШЕЙ ЦЕНЕ</span> </div>
+                <div class="banner_subtitle">Более 2500 товаров</div>
+                <div class="banner_points">
+                  <ul>
+                    <li>
+                      <img src="catalog/view/theme/Gobazar/image/images/point1.svg" alt="">
+                      <span>Заказы 24/7</span>
+                    </li>
+                    <li>
+                      <img src="catalog/view/theme/Gobazar/image/images/point2.svg" alt="">
+                      <span>Помощь в подборе</span>
+                    </li>
+                    <li>
+                      <img src="catalog/view/theme/Gobazar/image/images/point3.svg" alt="">
+                      <span>Быстрая отгрузка</span>
+                    </li>
+                    <li>
+                      <img src="catalog/view/theme/Gobazar/image/images/point4.svg" alt="">
+                      <span>Гарантия</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="hero_slider_item">
+              <figure>
+                <img src="catalog/view/theme/Gobazar/image/images/hero_slide1.jpg" alt="">
+              </figure>
+              <div class="banner_content">
+                <div class="banner_title">КАЧЕСТВО <br> <span>ПО ЛУЧШЕЙ ЦЕНЕ</span> </div>
+                <div class="banner_subtitle">Более 2500 товаров</div>
+                <div class="banner_points">
+                  <ul>
+                    <li>
+                      <img src="catalog/view/theme/Gobazar/image/images/point1.svg" alt="">
+                      <span>Заказы 24/7</span>
+                    </li>
+                    <li>
+                      <img src="catalog/view/theme/Gobazar/image/images/point2.svg" alt="">
+                      <span>Помощь в подборе</span>
+                    </li>
+                    <li>
+                      <img src="catalog/view/theme/Gobazar/image/images/point3.svg" alt="">
+                      <span>Быстрая отгрузка</span>
+                    </li>
+                    <li>
+                      <img src="catalog/view/theme/Gobazar/image/images/point4.svg" alt="">
+                      <span>Гарантия</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="hero_slider_item">
+              <figure>
+                <img src="catalog/view/theme/Gobazar/image/images/hero_slide1.jpg" alt="">
+              </figure>
+              <div class="banner_content">
+                <div class="banner_title">КАЧЕСТВО <br> <span>ПО ЛУЧШЕЙ ЦЕНЕ</span> </div>
+                <div class="banner_subtitle">Более 2500 товаров</div>
+                <div class="banner_points">
+                  <ul>
+                    <li>
+                      <img src="catalog/view/theme/Gobazar/image/images/point1.svg" alt="">
+                      <span>Заказы 24/7</span>
+                    </li>
+                    <li>
+                      <img src="catalog/view/theme/Gobazar/image/images/point2.svg" alt="">
+                      <span>Помощь в подборе</span>
+                    </li>
+                    <li>
+                      <img src="catalog/view/theme/Gobazar/image/images/point3.svg" alt="">
+                      <span>Быстрая отгрузка</span>
+                    </li>
+                    <li>
+                      <img src="catalog/view/theme/Gobazar/image/images/point4.svg" alt="">
+                      <span>Гарантия</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hero_banner right">
+          <figure>
+            <img src="catalog/view/theme/Gobazar/image/images/hero1.jpg" alt="">
+          </figure>
+          <div class="banner_content">
+            <div class="text title">Новые товары в распродаже</div>
+            <div class="banner_button">
+              <a href="#">Перейти в каталог</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="benefits">
+    <div class="container">
+      <div class="section_title">Наши преимущества</div>
+      <div class="block_wrap">
+        <div class="benefits_list">
+          <div class="benefit_item">
+            <figure>
+              <img src="catalog/view/theme/Gobazar/image/images/benefit1.svg" alt="">
+            </figure>
+            <div class="benefit_content">
+              <div class="benefit_title">ЗАПЧАСТИ С ДОСТАВКОЙ!</div>
+              <div class="benefit_text">Доставка до ТК – БЕСПЛАТНО. <br> Стоимость доставки до точки - индивидуально.</div>
+            </div>
+          </div>
+          <div class="benefit_item">
+            <figure>
+              <img src="catalog/view/theme/Gobazar/image/images/benefit2.svg" alt="">
+            </figure>
+            <div class="benefit_content">
+              <div class="benefit_title">ЗАПЧАСТИ С ЗАВОДОВ НАПРЯМУЮ!</div>
+              <div class="benefit_text">Наши партнеры - производители запчастей на JCB, Komatsu, Volvo, CAT и другие</div>
+            </div>
+          </div>
+          <div class="benefit_item">
+            <figure>
+              <img src="catalog/view/theme/Gobazar/image/images/benefit3.svg" alt="">
+            </figure>
+            <div class="benefit_content">
+              <div class="benefit_title">ЗАПЧАСТИ JCB НА 3CX И 4CX!</div>
+              <div class="benefit_text">Огромный каталог запчастей на самые популярные экскаваторы-погрузчики!</div>
+            </div>
+          </div>
+          <div class="benefit_item">
+            <figure>
+              <img src="catalog/view/theme/Gobazar/image/images/benefit1.svg" alt="">
+            </figure>
+            <div class="benefit_content">
+              <div class="benefit_title">ЗАПЧАСТИ ОПТОМ!</div>
+              <div class="benefit_text">Предлагаем выгодные оптовые цены поставщикам запчастей на спецтехнику в России!</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="categories_list">
+    <div class="container">
+      <div class="section_title">Каталог запчастей для спецтехники</div>
+      <div class="categories_catalog">
+        <div class="catalog_item"></div>
+      </div>
+    </div>
+  </section>
+  <section class="custom_banners">
+    <div class="container">
+      <div class="banner_slider_wrap">
+        <div class="banner_slider">
+          <div class="banner">
+            <figure>
+              <img src="catalog/view/theme/Gobazar/image/images/banner.jpg" alt="">
+            </figure>
+            <div class="banner_content">
+              <div class="banner_text"><span>Диски колеса на JCB</span>Всего <span>10 750 ₽</span></div>
+            </div>
+          </div>
+          <div class="banner">
+            <figure>
+              <img src="catalog/view/theme/Gobazar/image/images/banner.jpg" alt="">
+            </figure>
+            <div class="banner_content">
+              <div class="banner_text"><span>Диски колеса на JCB Диски колеса на JCB</span>Всего <span>10 750 ₽</span></div>
+            </div>
+          </div>
+          <div class="banner">
+            <figure>
+              <img src="catalog/view/theme/Gobazar/image/images/banner.jpg" alt="">
+            </figure>
+            <div class="banner_content">
+              <div class="banner_text"><span>Диски колеса на JCB</span>Всего <span>10 75000 ₽</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="brands">
+    <div class="containr">
+      <div class="section_title">Популярные бренды</div>
+      <div class="brands_list">
+        <div class="brand_item">
+          <figure>
+            <img src="catalog/view/theme/Gobazar/image/images/client1.jpg" alt="">
+          </figure>
+        </div>
+        <div class="brand_item">
+          <figure>
+            <img src="catalog/view/theme/Gobazar/image/images/client2.jpg" alt="">
+          </figure>
+        </div>
+        <div class="brand_item">
+          <figure>
+            <img src="catalog/view/theme/Gobazar/image/images/client3.jpg" alt="">
+          </figure>
+        </div>
+        <div class="brand_item">
+          <figure>
+            <img src="catalog/view/theme/Gobazar/image/images/client4.jpg" alt="">
+          </figure>
+        </div>
+        <div class="brand_item">
+          <figure>
+            <img src="catalog/view/theme/Gobazar/image/images/client5.jpg" alt="">
+          </figure>
+        </div>
+        <div class="brand_item">
+          <figure>
+            <img src="catalog/view/theme/Gobazar/image/images/client6.jpg" alt="">
+          </figure>
+        </div>
+        <div class="brand_item">
+          <figure>
+            <img src="catalog/view/theme/Gobazar/image/images/client7.jpg" alt="">
+          </figure>
+        </div>
+        <div class="brand_item">
+          <figure>
+            <img src="catalog/view/theme/Gobazar/image/images/client8.jpg" alt="">
+          </figure>
+        </div>
+        <div class="brand_item">
+          <figure>
+            <img src="catalog/view/theme/Gobazar/image/images/client9.jpg" alt="">
+          </figure>
+        </div>
+        <div class="brand_item">
+          <figure>
+            <img src="catalog/view/theme/Gobazar/image/images/client10.jpg" alt="">
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<div id="content">
+  <div class="box ProductbyCategory bottom-to-top hb-animate-element">
+    <div class="container">
+      <div class="row">
+        <div class="tab-head">
+          <div class="hometab-heading box-heading">Новинки, актуальные предложения</div>
+          <div id="tabss" class="htabs">
+            <ul class="etabs">
+              <li class="tab">
+                <a href="#tab-new">Новинки</a>
+              </li>
+              <li class="tab">
+                <a href="#tab-hot">Хиты</a>
+              </li>
+              <li class="tab">
+                <a href="#tab-seasson">Сезон</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="product-column">
+          <div id="tab-new" class="tab-content">
+            <div class="box">
+              <div class="box-content">
+                <div class="customNavigation">
+                  <a class="fa fa-angle-left prev">&nbsp;</a>
+                  <a class="fa fa-angle-right next">&nbsp;</a>
+                </div>
+                <div class="box-product product-carousel-custom" id="tabnew-carousel">
+                  <div class=" ">
+                    <div class="product-block product-thumb transition">
+                      <div class="product-block-inner">
+                        <div class="img-wrap">
+                          <div class="image">
+                            <a href="https://jcbprof.ru/gidravlicheskiy-nasos-2-bolta-shponka-jcb-919-72400">
+                              <img
+                                src="https://jcbprof.ru/image/cache/webp/catalog/Gidronasosi/91972400-287x373.webp"
+                                title="HEMA Гидравлический насос  A0222414001, 919/72400, 919/27100"
+                                alt="HEMA Гидравлический насос  A0222414001, 919/72400, 919/27100"
+                                class="img-responsive reg-image"
+                              />
+                              <div class="image_content" style="display: block; left: 0px; top: 100%; transition: all 300ms ease 0s;">
+                                <img
+                                  class="img-responsive hover-image"
+                                  src="https://jcbprof.ru/image/cache/webp/catalog/Gidronasosi/919724001-1-287x372.webp"
+                                  title="HEMA Гидравлический насос  A0222414001, 919/72400, 919/27100"
+                                  alt="HEMA Гидравлический насос  A0222414001, 919/72400, 919/27100"
+                                />
+                              </div>
+                            </a>
+                          </div>
+                          <div class="product_hover_block">
+                            <button class="wishlist" type="button" title="Добавить в закладки " onclick="wishlist.add('1197 ');"></button>
+                            <div class="quickview-button">
+                              <a class="quickbox" title="" href="https://jcbprof.ru/gidravlicheskiy-nasos-2-bolta-shponka-jcb-919-72400"></a>
+                            </div>
+
+                            <button class="compare_button" type="button" title="Добавить к сравнению " onclick="compare.add('1197 ');"></button>
+                          </div>
+                        </div>
+                        <div class="product-details">
+                          <div class="caption">
+                            <h4><a href="https://jcbprof.ru/gidravlicheskiy-nasos-2-bolta-shponka-jcb-919-72400 ">HEMA Гидравлический насос A0222414001, 919/72400, 919/27100 </a></h4>
+                            <p class="price">
+                              117 090₽
+                            </p>
+
+                            <div class="action">
+                              <button type="button" class="cart_button" onclick="cart.add('1197');" title="Купить">Купить</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <div class=" ">
+                    <div class="product-block product-thumb transition">
+                      <div class="product-block-inner">
+                        <div class="img-wrap">
+                          <div class="image">
+                            <a href="https://jcbprof.ru/gidravlicheskij-nasos-6111153m93-111505-111503">
+                              <img src="https://jcbprof.ru/image/cache/webp/catalog/Gidronasosi/111503-287x373.webp" title="HEMA Гидравлический насос 111503" alt="HEMA Гидравлический насос 111503" class="img-responsive reg-image" />
+                              <div class="image_content" style="display: block; left: -100%; top: 0px; transition: all 300ms ease 0s;">
+                                <img class="img-responsive hover-image" src="https://jcbprof.ru/image/cache/webp/catalog/Gidronasosi/111503-1-287x372.webp" title="HEMA Гидравлический насос 111503" alt="HEMA Гидравлический насос 111503" />
+                              </div>
+                            </a>
+                          </div>
+                          <div class="product_hover_block">
+                            <button class="wishlist" type="button" title="Добавить в закладки " onclick="wishlist.add('1708 ');"></button>
+                            <div class="quickview-button">
+                              <a class="quickbox" title="" href="https://jcbprof.ru/gidravlicheskij-nasos-6111153m93-111505-111503"></a>
+                            </div>
+
+                            <button class="compare_button" type="button" title="Добавить к сравнению " onclick="compare.add('1708 ');"></button>
+                          </div>
+                        </div>
+                        <div class="product-details">
+                          <div class="caption">
+                            <h4><a href="https://jcbprof.ru/gidravlicheskij-nasos-6111153m93-111505-111503 ">HEMA Гидравлический насос 111503 </a></h4>
+                            <p class="price">
+                              128 150₽
+                            </p>
+
+                            <div class="action">
+                              <button type="button" class="cart_button" onclick="cart.add('1708');" title="Купить">Купить</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <script>
+                      $(".total-review1708").on("click", function () {
+                        var t = "https://jcbprof.ru/gidravlicheskij-nasos-6111153m93-111505-111503";
+                        const parseResult = new DOMParser().parseFromString(t, "text/html");
+                        const parsedUrl = parseResult.documentElement.textContent;
+                        window.location.href = parsedUrl + "&review";
+                        return false;
+                      });
+                    </script>
+                  </div>
+                  <div class=" ">
+                    <div class="product-block product-thumb transition">
+                      <div class="product-block-inner">
+                        <div class="img-wrap">
+                          <div class="image">
+                            <a href="https://jcbprof.ru/hema-gidravlicheskij-nasos-mst-hpx-52033">
+                              <img src="https://jcbprof.ru/image/cache/webp/catalog/demo/52033-287x373.webp" title="HEMA Гидравлический насос MST HPX 52033" alt="HEMA Гидравлический насос MST HPX 52033" class="img-responsive reg-image" />
+                              <div class="image_content" style="display: block; left: 0px; top: -100%; transition: all 300ms ease 0s;">
+                                <img
+                                  class="img-responsive hover-image"
+                                  src="https://jcbprof.ru/image/cache/webp/catalog/Gidronasosi/52033-1-287x372.webp"
+                                  title="HEMA Гидравлический насос MST HPX 52033"
+                                  alt="HEMA Гидравлический насос MST HPX 52033"
+                                />
+                              </div>
+                            </a>
+                          </div>
+                          <div class="product_hover_block">
+                            <button class="wishlist" type="button" title="Добавить в закладки " onclick="wishlist.add('2754 ');"></button>
+                            <div class="quickview-button">
+                              <a class="quickbox" title="" href="https://jcbprof.ru/hema-gidravlicheskij-nasos-mst-hpx-52033"></a>
+                            </div>
+
+                            <button class="compare_button" type="button" title="Добавить к сравнению " onclick="compare.add('2754 ');"></button>
+                          </div>
+                        </div>
+                        <div class="product-details">
+                          <div class="caption">
+                            <h4><a href="https://jcbprof.ru/hema-gidravlicheskij-nasos-mst-hpx-52033 ">HEMA Гидравлический насос MST HPX 52033 </a></h4>
+                            <p class="price">
+                              97 680₽
+                            </p>
+
+                            <div class="action">
+                              <button type="button" class="cart_button" onclick="cart.add('2754');" title="Купить">Купить</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <script>
+                      $(".total-review2754").on("click", function () {
+                        var t = "https://jcbprof.ru/hema-gidravlicheskij-nasos-mst-hpx-52033";
+                        const parseResult = new DOMParser().parseFromString(t, "text/html");
+                        const parsedUrl = parseResult.documentElement.textContent;
+                        window.location.href = parsedUrl + "&review";
+                        return false;
+                      });
+                    </script>
+                  </div>
+                  <div class=" ">
+                    <div class="product-block product-thumb transition">
+                      <div class="product-block-inner">
+                        <div class="img-wrap">
+                          <div class="image">
+                            <a href="https://jcbprof.ru/gidravlicheskij-nasos-1ph-1ph-039">
+                              <img
+                                src="https://jcbprof.ru/image/cache/webp/catalog/Gidronasosi/1PH1PH039-287x373.webp"
+                                title="Гидравлический насос  HYUNDAI 1PH/1PH/039"
+                                alt="Гидравлический насос  HYUNDAI 1PH/1PH/039"
+                                class="img-responsive reg-image"
+                              />
+                              <div class="image_content" style="display: block; left: 0px; top: -100%; transition: all 300ms ease 0s;">
+                                <img
+                                  class="img-responsive hover-image"
+                                  src="https://jcbprof.ru/image/cache/webp/catalog/Gidronasosi/1PH1PH039-1-287x372.webp"
+                                  title="Гидравлический насос  HYUNDAI 1PH/1PH/039"
+                                  alt="Гидравлический насос  HYUNDAI 1PH/1PH/039"
+                                />
+                              </div>
+                            </a>
+                          </div>
+                          <div class="product_hover_block">
+                            <button class="wishlist" type="button" title="Добавить в закладки " onclick="wishlist.add('1710 ');"></button>
+                            <div class="quickview-button">
+                              <a class="quickbox" title="" href="https://jcbprof.ru/gidravlicheskij-nasos-1ph-1ph-039"></a>
+                            </div>
+
+                            <button class="compare_button" type="button" title="Добавить к сравнению " onclick="compare.add('1710 ');"></button>
+                          </div>
+                        </div>
+                        <div class="product-details">
+                          <div class="caption">
+                            <h4><a href="https://jcbprof.ru/gidravlicheskij-nasos-1ph-1ph-039 ">Гидравлический насос HYUNDAI 1PH/1PH/039 </a></h4>
+                            <p class="price">
+                              110 190₽
+                            </p>
+
+                            <div class="action">
+                              <button type="button" class="cart_button" onclick="cart.add('1710');" title="Купить">Купить</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <script>
+                      $(".total-review1710").on("click", function () {
+                        var t = "https://jcbprof.ru/gidravlicheskij-nasos-1ph-1ph-039";
+                        const parseResult = new DOMParser().parseFromString(t, "text/html");
+                        const parsedUrl = parseResult.documentElement.textContent;
+                        window.location.href = parsedUrl + "&review";
+                        return false;
+                      });
+                    </script>
+                  </div>
+                  <div class=" ">
+                    <div class="product-block product-thumb transition">
+                      <div class="product-block-inner">
+                        <div class="img-wrap">
+                          <div class="image">
+                            <a href="https://jcbprof.ru/gidravlicheskij-nasos-terex-134415">
+                              <img src="https://jcbprof.ru/image/cache/webp/catalog/Gidronasosi/134415-287x373.webp" title="Гидравлический насос  TEREX 134415 																														" alt="Гидравлический насос  TEREX 134415 																														" class="img-responsive reg-image" />
+                              <div class="image_content">
+                                <img
+                                  class="img-responsive hover-image"
+                                  src="https://jcbprof.ru/image/cache/webp/catalog/Gidronasosi/134415-1-287x372.webp"
+                                  title="Гидравлический насос  TEREX 134415 																														"
+                                  alt="Гидравлический насос  TEREX 134415 																														"
+                                />
+                              </div>
+                            </a>
+                          </div>
+                          <div class="product_hover_block">
+                            <button class="wishlist" type="button" title="Добавить в закладки " onclick="wishlist.add('1766 ');"></button>
+                            <div class="quickview-button">
+                              <a class="quickbox" title="" href="https://jcbprof.ru/gidravlicheskij-nasos-terex-134415"></a>
+                            </div>
+
+                            <button class="compare_button" type="button" title="Добавить к сравнению " onclick="compare.add('1766 ');"></button>
+                          </div>
+                        </div>
+                        <div class="product-details">
+                          <div class="caption">
+                            <h4><a href="https://jcbprof.ru/gidravlicheskij-nasos-terex-134415 ">Гидравлический насос TEREX 134415 </a></h4>
+                            <p class="price">
+                              100 910₽
+                            </p>
+
+                            <div class="action">
+                              <button type="button" class="cart_button" onclick="cart.add('1766');" title="Купить">Купить</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <script>
+                      $(".total-review1766").on("click", function () {
+                        var t = "https://jcbprof.ru/gidravlicheskij-nasos-terex-134415";
+                        const parseResult = new DOMParser().parseFromString(t, "text/html");
+                        const parsedUrl = parseResult.documentElement.textContent;
+                        window.location.href = parsedUrl + "&review";
+                        return false;
+                      });
+                    </script>
+                  </div>
+                  <div class=" ">
+                    <div class="product-block product-thumb transition">
+                      <div class="product-block-inner">
+                        <div class="img-wrap">
+                          <div class="image">
+                            <a href="https://jcbprof.ru/gidravlicheskij-nasos-hema-hl757-7-x1a505015051">
+                              <img src="https://jcbprof.ru/image/cache/webp/catalog/Gidronasosi/146202-287x373.webp" title="Гидравлический насос HYINDAI 146202" alt="Гидравлический насос HYINDAI 146202" class="img-responsive reg-image" />
+                              <div class="image_content">
+                                <img
+                                  class="img-responsive hover-image"
+                                  src="https://jcbprof.ru/image/cache/webp/catalog/Gidronasosi/146202-1-287x372.webp"
+                                  title="Гидравлический насос HYINDAI 146202"
+                                  alt="Гидравлический насос HYINDAI 146202"
+                                />
+                              </div>
+                            </a>
+                          </div>
+                          <div class="product_hover_block">
+                            <button class="wishlist" type="button" title="Добавить в закладки " onclick="wishlist.add('1720 ');"></button>
+                            <div class="quickview-button">
+                              <a class="quickbox" title="" href="https://jcbprof.ru/gidravlicheskij-nasos-hema-hl757-7-x1a505015051"></a>
+                            </div>
+
+                            <button class="compare_button" type="button" title="Добавить к сравнению " onclick="compare.add('1720 ');"></button>
+                          </div>
+                        </div>
+                        <div class="product-details">
+                          <div class="caption">
+                            <h4><a href="https://jcbprof.ru/gidravlicheskij-nasos-hema-hl757-7-x1a505015051 ">Гидравлический насос HYINDAI 146202 </a></h4>
+                            <p class="price">
+                              119 890₽
+                            </p>
+
+                            <div class="action">
+                              <button type="button" class="cart_button" onclick="cart.add('1720');" title="Купить">Купить</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <script>
+                      $(".total-review1720").on("click", function () {
+                        var t = "https://jcbprof.ru/gidravlicheskij-nasos-hema-hl757-7-x1a505015051";
+                        const parseResult = new DOMParser().parseFromString(t, "text/html");
+                        const parsedUrl = parseResult.documentElement.textContent;
+                        window.location.href = parsedUrl + "&review";
+                        return false;
+                      });
+                    </script>
+                  </div>
+                  <div class=" ">
+                    <div class="product-block product-thumb transition">
+                      <div class="product-block-inner">
+                        <div class="img-wrap">
+                          <div class="image">
+                            <a href="https://jcbprof.ru/gidravlicheskij-nasos-1ph-1ph-098">
+                              <img
+                                src="https://jcbprof.ru/image/cache/webp/catalog/Gidronasosi/1PH1PH098-287x373.webp"
+                                title="Гидравлический насос HYUNDAI 1PH/1PH/098"
+                                alt="Гидравлический насос HYUNDAI 1PH/1PH/098"
+                                class="img-responsive reg-image"
+                              />
+                              <div class="image_content">
+                                <img
+                                  class="img-responsive hover-image"
+                                  src="https://jcbprof.ru/image/cache/webp/catalog/Gidronasosi/1PH1PH098-1-287x372.webp"
+                                  title="Гидравлический насос HYUNDAI 1PH/1PH/098"
+                                  alt="Гидравлический насос HYUNDAI 1PH/1PH/098"
+                                />
+                              </div>
+                            </a>
+                          </div>
+                          <div class="product_hover_block">
+                            <button class="wishlist" type="button" title="Добавить в закладки " onclick="wishlist.add('1709 ');"></button>
+                            <div class="quickview-button">
+                              <a class="quickbox" title="" href="https://jcbprof.ru/gidravlicheskij-nasos-1ph-1ph-098"></a>
+                            </div>
+
+                            <button class="compare_button" type="button" title="Добавить к сравнению " onclick="compare.add('1709 ');"></button>
+                          </div>
+                        </div>
+                        <div class="product-details">
+                          <div class="caption">
+                            <h4><a href="https://jcbprof.ru/gidravlicheskij-nasos-1ph-1ph-098 ">Гидравлический насос HYUNDAI 1PH/1PH/098 </a></h4>
+                            <p class="price">
+                              110 190₽
+                            </p>
+
+                            <div class="action">
+                              <button type="button" class="cart_button" onclick="cart.add('1709');" title="Купить">Купить</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <script>
+                      $(".total-review1709").on("click", function () {
+                        var t = "https://jcbprof.ru/gidravlicheskij-nasos-1ph-1ph-098";
+                        const parseResult = new DOMParser().parseFromString(t, "text/html");
+                        const parsedUrl = parseResult.documentElement.textContent;
+                        window.location.href = parsedUrl + "&review";
+                        return false;
+                      });
+                    </script>
+                  </div>
+                  <div class=" ">
+                    <div class="product-block product-thumb transition">
+                      <div class="product-block-inner">
+                        <div class="img-wrap">
+                          <div class="image">
+                            <a href="https://jcbprof.ru/gidronasos-332-f9029">
+                              <img
+                                src="https://jcbprof.ru/image/cache/webp/catalog/Gidronasosi/20925579%20Parker-287x373.webp"
+                                title="Гидравлический насос JCB 332/F9029, 20/925579 оригинальный PARKER"
+                                alt="Гидравлический насос JCB 332/F9029, 20/925579 оригинальный PARKER"
+                                class="img-responsive reg-image"
+                              />
+                              <div class="image_content">
+                                <img
+                                  class="img-responsive hover-image"
+                                  src="https://jcbprof.ru/image/cache/webp/catalog/Gidronasosi/20925579%20Parker-1-287x372.webp"
+                                  title="Гидравлический насос JCB 332/F9029, 20/925579 оригинальный PARKER"
+                                  alt="Гидравлический насос JCB 332/F9029, 20/925579 оригинальный PARKER"
+                                />
+                              </div>
+                            </a>
+                          </div>
+                          <div class="product_hover_block">
+                            <button class="wishlist" type="button" title="Добавить в закладки " onclick="wishlist.add('1209 ');"></button>
+                            <div class="quickview-button">
+                              <a class="quickbox" title="" href="https://jcbprof.ru/gidronasos-332-f9029"></a>
+                            </div>
+
+                            <button class="compare_button" type="button" title="Добавить к сравнению " onclick="compare.add('1209 ');"></button>
+                          </div>
+                        </div>
+                        <div class="product-details">
+                          <div class="caption">
+                            <h4><a href="https://jcbprof.ru/gidronasos-332-f9029 ">Гидравлический насос JCB 332/F9029, 20/925579 оригинальный PARKER </a></h4>
+                            <p class="price">
+                              168 100₽
+                            </p>
+
+                            <div class="action">
+                              <button type="button" class="cart_button" onclick="cart.add('1209');" title="Купить">Купить</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <script>
+                      $(".total-review1209").on("click", function () {
+                        var t = "https://jcbprof.ru/gidronasos-332-f9029";
+                        const parseResult = new DOMParser().parseFromString(t, "text/html");
+                        const parsedUrl = parseResult.documentElement.textContent;
+                        window.location.href = parsedUrl + "&review";
+                        return false;
+                      });
+                    </script>
+                  </div>
+                </div>
+              </div>
+              <span class="tabnew_default_width" style="display: none; visibility: hidden; width:240px"></span>
+            </div>
+          </div>
+          <div id="tab-hot" class="tab-content">
+            <div class="box">
+              <div class="box-content">
+                <div class="customNavigation">
+                  <a class="fa fa-angle-left prev">&nbsp;</a>
+                  <a class="fa fa-angle-right next">&nbsp;</a>
+                </div>
+                <div class="box-product product-carousel-custom" id="tabhot-carousel">
+                  <div class=" ">
+                    <div class="product-block product-thumb transition">
+                      <div class="product-block-inner">
+                        <div class="img-wrap">
+                          <div class="image">
+                            <a href="https://jcbprof.ru/gidravlicheskiy-nasos-2-bolta-shponka-jcb-919-72400">
+                              <img
+                                src="https://jcbprof.ru/image/cache/webp/catalog/Gidronasosi/91972400-287x373.webp"
+                                title="HEMA Гидравлический насос  A0222414001, 919/72400, 919/27100"
+                                alt="HEMA Гидравлический насос  A0222414001, 919/72400, 919/27100"
+                                class="img-responsive reg-image"
+                              />
+                              <div class="image_content" style="display: block; left: 0px; top: 100%; transition: all 300ms ease 0s;">
+                                <img
+                                  class="img-responsive hover-image"
+                                  src="https://jcbprof.ru/image/cache/webp/catalog/Gidronasosi/919724001-1-287x372.webp"
+                                  title="HEMA Гидравлический насос  A0222414001, 919/72400, 919/27100"
+                                  alt="HEMA Гидравлический насос  A0222414001, 919/72400, 919/27100"
+                                />
+                              </div>
+                            </a>
+                          </div>
+                          <div class="product_hover_block">
+                            <button class="wishlist" type="button" title="Добавить в закладки " onclick="wishlist.add('1197 ');"></button>
+                            <div class="quickview-button">
+                              <a class="quickbox" title="" href="https://jcbprof.ru/gidravlicheskiy-nasos-2-bolta-shponka-jcb-919-72400"></a>
+                            </div>
+
+                            <button class="compare_button" type="button" title="Добавить к сравнению " onclick="compare.add('1197 ');"></button>
+                          </div>
+                        </div>
+                        <div class="product-details">
+                          <div class="caption">
+                            <h4><a href="https://jcbprof.ru/gidravlicheskiy-nasos-2-bolta-shponka-jcb-919-72400 ">HEMA Гидравлический насос A0222414001, 919/72400, 919/27100 </a></h4>
+                            <p class="price">
+                              117 090₽
+                            </p>
+
+                            <div class="action">
+                              <button type="button" class="cart_button" onclick="cart.add('1197');" title="Купить">Купить</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class=" ">
+                    <div class="product-block product-thumb transition">
+                      <div class="product-block-inner">
+                        <div class="img-wrap">
+                          <div class="image">
+                            <a href="https://jcbprof.ru/gidravlicheskij-nasos-6111153m93-111505-111503">
+                              <img src="https://jcbprof.ru/image/cache/webp/catalog/Gidronasosi/111503-287x373.webp" title="HEMA Гидравлический насос 111503" alt="HEMA Гидравлический насос 111503" class="img-responsive reg-image" />
+                              <div class="image_content" style="display: block; left: -100%; top: 0px; transition: all 300ms ease 0s;">
+                                <img class="img-responsive hover-image" src="https://jcbprof.ru/image/cache/webp/catalog/Gidronasosi/111503-1-287x372.webp" title="HEMA Гидравлический насос 111503" alt="HEMA Гидравлический насос 111503" />
+                              </div>
+                            </a>
+                          </div>
+                          <div class="product_hover_block">
+                            <button class="wishlist" type="button" title="Добавить в закладки " onclick="wishlist.add('1708 ');"></button>
+                            <div class="quickview-button">
+                              <a class="quickbox" title="" href="https://jcbprof.ru/gidravlicheskij-nasos-6111153m93-111505-111503"></a>
+                            </div>
+
+                            <button class="compare_button" type="button" title="Добавить к сравнению " onclick="compare.add('1708 ');"></button>
+                          </div>
+                        </div>
+                        <div class="product-details">
+                          <div class="caption">
+                            <h4><a href="https://jcbprof.ru/gidravlicheskij-nasos-6111153m93-111505-111503 ">HEMA Гидравлический насос 111503 </a></h4>
+                            <p class="price">
+                              128 150₽
+                            </p>
+
+                            <div class="action">
+                              <button type="button" class="cart_button" onclick="cart.add('1708');" title="Купить">Купить</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <script>
+                      $(".total-review1708").on("click", function () {
+                        var t = "https://jcbprof.ru/gidravlicheskij-nasos-6111153m93-111505-111503";
+                        const parseResult = new DOMParser().parseFromString(t, "text/html");
+                        const parsedUrl = parseResult.documentElement.textContent;
+                        window.location.href = parsedUrl + "&review";
+                        return false;
+                      });
+                    </script>
+                  </div>
+                  <div class=" ">
+                    <div class="product-block product-thumb transition">
+                      <div class="product-block-inner">
+                        <div class="img-wrap">
+                          <div class="image">
+                            <a href="https://jcbprof.ru/hema-gidravlicheskij-nasos-mst-hpx-52033">
+                              <img src="https://jcbprof.ru/image/cache/webp/catalog/demo/52033-287x373.webp" title="HEMA Гидравлический насос MST HPX 52033" alt="HEMA Гидравлический насос MST HPX 52033" class="img-responsive reg-image" />
+                              <div class="image_content" style="display: block; left: 0px; top: -100%; transition: all 300ms ease 0s;">
+                                <img
+                                  class="img-responsive hover-image"
+                                  src="https://jcbprof.ru/image/cache/webp/catalog/Gidronasosi/52033-1-287x372.webp"
+                                  title="HEMA Гидравлический насос MST HPX 52033"
+                                  alt="HEMA Гидравлический насос MST HPX 52033"
+                                />
+                              </div>
+                            </a>
+                          </div>
+                          <div class="product_hover_block">
+                            <button class="wishlist" type="button" title="Добавить в закладки " onclick="wishlist.add('2754 ');"></button>
+                            <div class="quickview-button">
+                              <a class="quickbox" title="" href="https://jcbprof.ru/hema-gidravlicheskij-nasos-mst-hpx-52033"></a>
+                            </div>
+
+                            <button class="compare_button" type="button" title="Добавить к сравнению " onclick="compare.add('2754 ');"></button>
+                          </div>
+                        </div>
+                        <div class="product-details">
+                          <div class="caption">
+                            <h4><a href="https://jcbprof.ru/hema-gidravlicheskij-nasos-mst-hpx-52033 ">HEMA Гидравлический насос MST HPX 52033 </a></h4>
+                            <p class="price">
+                              97 680₽
+                            </p>
+
+                            <div class="action">
+                              <button type="button" class="cart_button" onclick="cart.add('2754');" title="Купить">Купить</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <script>
+                      $(".total-review2754").on("click", function () {
+                        var t = "https://jcbprof.ru/hema-gidravlicheskij-nasos-mst-hpx-52033";
+                        const parseResult = new DOMParser().parseFromString(t, "text/html");
+                        const parsedUrl = parseResult.documentElement.textContent;
+                        window.location.href = parsedUrl + "&review";
+                        return false;
+                      });
+                    </script>
+                  </div>
+                  <div class=" ">
+                    <div class="product-block product-thumb transition">
+                      <div class="product-block-inner">
+                        <div class="img-wrap">
+                          <div class="image">
+                            <a href="https://jcbprof.ru/gidravlicheskij-nasos-1ph-1ph-039">
+                              <img
+                                src="https://jcbprof.ru/image/cache/webp/catalog/Gidronasosi/1PH1PH039-287x373.webp"
+                                title="Гидравлический насос  HYUNDAI 1PH/1PH/039"
+                                alt="Гидравлический насос  HYUNDAI 1PH/1PH/039"
+                                class="img-responsive reg-image"
+                              />
+                              <div class="image_content" style="display: block; left: 0px; top: -100%; transition: all 300ms ease 0s;">
+                                <img
+                                  class="img-responsive hover-image"
+                                  src="https://jcbprof.ru/image/cache/webp/catalog/Gidronasosi/1PH1PH039-1-287x372.webp"
+                                  title="Гидравлический насос  HYUNDAI 1PH/1PH/039"
+                                  alt="Гидравлический насос  HYUNDAI 1PH/1PH/039"
+                                />
+                              </div>
+                            </a>
+                          </div>
+                          <div class="product_hover_block">
+                            <button class="wishlist" type="button" title="Добавить в закладки " onclick="wishlist.add('1710 ');"></button>
+                            <div class="quickview-button">
+                              <a class="quickbox" title="" href="https://jcbprof.ru/gidravlicheskij-nasos-1ph-1ph-039"></a>
+                            </div>
+
+                            <button class="compare_button" type="button" title="Добавить к сравнению " onclick="compare.add('1710 ');"></button>
+                          </div>
+                        </div>
+                        <div class="product-details">
+                          <div class="caption">
+                            <h4><a href="https://jcbprof.ru/gidravlicheskij-nasos-1ph-1ph-039 ">Гидравлический насос HYUNDAI 1PH/1PH/039 </a></h4>
+                            <p class="price">
+                              110 190₽
+                            </p>
+
+                            <div class="action">
+                              <button type="button" class="cart_button" onclick="cart.add('1710');" title="Купить">Купить</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <script>
+                      $(".total-review1710").on("click", function () {
+                        var t = "https://jcbprof.ru/gidravlicheskij-nasos-1ph-1ph-039";
+                        const parseResult = new DOMParser().parseFromString(t, "text/html");
+                        const parsedUrl = parseResult.documentElement.textContent;
+                        window.location.href = parsedUrl + "&review";
+                        return false;
+                      });
+                    </script>
+                  </div>
+                  <div class=" ">
+                    <div class="product-block product-thumb transition">
+                      <div class="product-block-inner">
+                        <div class="img-wrap">
+                          <div class="image">
+                            <a href="https://jcbprof.ru/gidravlicheskij-nasos-terex-134415">
+                              <img src="https://jcbprof.ru/image/cache/webp/catalog/Gidronasosi/134415-287x373.webp" title="Гидравлический насос  TEREX 134415 																														" alt="Гидравлический насос  TEREX 134415 																														" class="img-responsive reg-image" />
+                              <div class="image_content">
+                                <img
+                                  class="img-responsive hover-image"
+                                  src="https://jcbprof.ru/image/cache/webp/catalog/Gidronasosi/134415-1-287x372.webp"
+                                  title="Гидравлический насос  TEREX 134415 																														"
+                                  alt="Гидравлический насос  TEREX 134415 																														"
+                                />
+                              </div>
+                            </a>
+                          </div>
+                          <div class="product_hover_block">
+                            <button class="wishlist" type="button" title="Добавить в закладки " onclick="wishlist.add('1766 ');"></button>
+                            <div class="quickview-button">
+                              <a class="quickbox" title="" href="https://jcbprof.ru/gidravlicheskij-nasos-terex-134415"></a>
+                            </div>
+
+                            <button class="compare_button" type="button" title="Добавить к сравнению " onclick="compare.add('1766 ');"></button>
+                          </div>
+                        </div>
+                        <div class="product-details">
+                          <div class="caption">
+                            <h4><a href="https://jcbprof.ru/gidravlicheskij-nasos-terex-134415 ">Гидравлический насос TEREX 134415 </a></h4>
+                            <p class="price">
+                              100 910₽
+                            </p>
+
+                            <div class="action">
+                              <button type="button" class="cart_button" onclick="cart.add('1766');" title="Купить">Купить</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <script>
+                      $(".total-review1766").on("click", function () {
+                        var t = "https://jcbprof.ru/gidravlicheskij-nasos-terex-134415";
+                        const parseResult = new DOMParser().parseFromString(t, "text/html");
+                        const parsedUrl = parseResult.documentElement.textContent;
+                        window.location.href = parsedUrl + "&review";
+                        return false;
+                      });
+                    </script>
+                  </div>
+                  <div class=" ">
+                    <div class="product-block product-thumb transition">
+                      <div class="product-block-inner">
+                        <div class="img-wrap">
+                          <div class="image">
+                            <a href="https://jcbprof.ru/gidravlicheskij-nasos-hema-hl757-7-x1a505015051">
+                              <img src="https://jcbprof.ru/image/cache/webp/catalog/Gidronasosi/146202-287x373.webp" title="Гидравлический насос HYINDAI 146202" alt="Гидравлический насос HYINDAI 146202" class="img-responsive reg-image" />
+                              <div class="image_content">
+                                <img
+                                  class="img-responsive hover-image"
+                                  src="https://jcbprof.ru/image/cache/webp/catalog/Gidronasosi/146202-1-287x372.webp"
+                                  title="Гидравлический насос HYINDAI 146202"
+                                  alt="Гидравлический насос HYINDAI 146202"
+                                />
+                              </div>
+                            </a>
+                          </div>
+                          <div class="product_hover_block">
+                            <button class="wishlist" type="button" title="Добавить в закладки " onclick="wishlist.add('1720 ');"></button>
+                            <div class="quickview-button">
+                              <a class="quickbox" title="" href="https://jcbprof.ru/gidravlicheskij-nasos-hema-hl757-7-x1a505015051"></a>
+                            </div>
+
+                            <button class="compare_button" type="button" title="Добавить к сравнению " onclick="compare.add('1720 ');"></button>
+                          </div>
+                        </div>
+                        <div class="product-details">
+                          <div class="caption">
+                            <h4><a href="https://jcbprof.ru/gidravlicheskij-nasos-hema-hl757-7-x1a505015051 ">Гидравлический насос HYINDAI 146202 </a></h4>
+                            <p class="price">
+                              119 890₽
+                            </p>
+
+                            <div class="action">
+                              <button type="button" class="cart_button" onclick="cart.add('1720');" title="Купить">Купить</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <script>
+                      $(".total-review1720").on("click", function () {
+                        var t = "https://jcbprof.ru/gidravlicheskij-nasos-hema-hl757-7-x1a505015051";
+                        const parseResult = new DOMParser().parseFromString(t, "text/html");
+                        const parsedUrl = parseResult.documentElement.textContent;
+                        window.location.href = parsedUrl + "&review";
+                        return false;
+                      });
+                    </script>
+                  </div>
+                  <div class=" ">
+                    <div class="product-block product-thumb transition">
+                      <div class="product-block-inner">
+                        <div class="img-wrap">
+                          <div class="image">
+                            <a href="https://jcbprof.ru/gidravlicheskij-nasos-1ph-1ph-098">
+                              <img
+                                src="https://jcbprof.ru/image/cache/webp/catalog/Gidronasosi/1PH1PH098-287x373.webp"
+                                title="Гидравлический насос HYUNDAI 1PH/1PH/098"
+                                alt="Гидравлический насос HYUNDAI 1PH/1PH/098"
+                                class="img-responsive reg-image"
+                              />
+                              <div class="image_content">
+                                <img
+                                  class="img-responsive hover-image"
+                                  src="https://jcbprof.ru/image/cache/webp/catalog/Gidronasosi/1PH1PH098-1-287x372.webp"
+                                  title="Гидравлический насос HYUNDAI 1PH/1PH/098"
+                                  alt="Гидравлический насос HYUNDAI 1PH/1PH/098"
+                                />
+                              </div>
+                            </a>
+                          </div>
+                          <div class="product_hover_block">
+                            <button class="wishlist" type="button" title="Добавить в закладки " onclick="wishlist.add('1709 ');"></button>
+                            <div class="quickview-button">
+                              <a class="quickbox" title="" href="https://jcbprof.ru/gidravlicheskij-nasos-1ph-1ph-098"></a>
+                            </div>
+
+                            <button class="compare_button" type="button" title="Добавить к сравнению " onclick="compare.add('1709 ');"></button>
+                          </div>
+                        </div>
+                        <div class="product-details">
+                          <div class="caption">
+                            <h4><a href="https://jcbprof.ru/gidravlicheskij-nasos-1ph-1ph-098 ">Гидравлический насос HYUNDAI 1PH/1PH/098 </a></h4>
+                            <p class="price">
+                              110 190₽
+                            </p>
+
+                            <div class="action">
+                              <button type="button" class="cart_button" onclick="cart.add('1709');" title="Купить">Купить</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <script>
+                      $(".total-review1709").on("click", function () {
+                        var t = "https://jcbprof.ru/gidravlicheskij-nasos-1ph-1ph-098";
+                        const parseResult = new DOMParser().parseFromString(t, "text/html");
+                        const parsedUrl = parseResult.documentElement.textContent;
+                        window.location.href = parsedUrl + "&review";
+                        return false;
+                      });
+                    </script>
+                  </div>
+                  <div class=" ">
+                    <div class="product-block product-thumb transition">
+                      <div class="product-block-inner">
+                        <div class="img-wrap">
+                          <div class="image">
+                            <a href="https://jcbprof.ru/gidronasos-332-f9029">
+                              <img
+                                src="https://jcbprof.ru/image/cache/webp/catalog/Gidronasosi/20925579%20Parker-287x373.webp"
+                                title="Гидравлический насос JCB 332/F9029, 20/925579 оригинальный PARKER"
+                                alt="Гидравлический насос JCB 332/F9029, 20/925579 оригинальный PARKER"
+                                class="img-responsive reg-image"
+                              />
+                              <div class="image_content">
+                                <img
+                                  class="img-responsive hover-image"
+                                  src="https://jcbprof.ru/image/cache/webp/catalog/Gidronasosi/20925579%20Parker-1-287x372.webp"
+                                  title="Гидравлический насос JCB 332/F9029, 20/925579 оригинальный PARKER"
+                                  alt="Гидравлический насос JCB 332/F9029, 20/925579 оригинальный PARKER"
+                                />
+                              </div>
+                            </a>
+                          </div>
+                          <div class="product_hover_block">
+                            <button class="wishlist" type="button" title="Добавить в закладки " onclick="wishlist.add('1209 ');"></button>
+                            <div class="quickview-button">
+                              <a class="quickbox" title="" href="https://jcbprof.ru/gidronasos-332-f9029"></a>
+                            </div>
+
+                            <button class="compare_button" type="button" title="Добавить к сравнению " onclick="compare.add('1209 ');"></button>
+                          </div>
+                        </div>
+                        <div class="product-details">
+                          <div class="caption">
+                            <h4><a href="https://jcbprof.ru/gidronasos-332-f9029 ">Гидравлический насос JCB 332/F9029, 20/925579 оригинальный PARKER </a></h4>
+                            <p class="price">
+                              168 100₽
+                            </p>
+
+                            <div class="action">
+                              <button type="button" class="cart_button" onclick="cart.add('1209');" title="Купить">Купить</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <script>
+                      $(".total-review1209").on("click", function () {
+                        var t = "https://jcbprof.ru/gidronasos-332-f9029";
+                        const parseResult = new DOMParser().parseFromString(t, "text/html");
+                        const parsedUrl = parseResult.documentElement.textContent;
+                        window.location.href = parsedUrl + "&review";
+                        return false;
+                      });
+                    </script>
+                  </div>
+                </div>
+              </div>
+              <span class="tabhot_default_width" style="display: none; visibility: hidden; width:240px"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    $("#tabss a").tabss();
+  </script>
+
+  <div class="box webdigifyblog bottom-to-top hb-animate-element">
+    <div class="container">
+      <div class="row">
+        <div class="box-heading">Новости</div>
+        <div class="box-content">
+          <div class="box-product owl-carousel blogcarousel" id="blog-carousel">
+            <div class="blog-item">
+              <div class="product-block">
+                <div class="blog-left">
+                  <div class="blog-image">
+                    <img src="https://jcbprof.ru/image/cache/webp/catalog/1690423994_myskillsconnect-com-p-ekskavator-pogruzchik-new-holland-115-foto-18-1040x324.webp" alt="Новости" title="Новости" class="img-thumbnail" />
+                    <div class="post-image-hover"></div>
+                    <p class="post_hover">
+                      <a
+                        class="icon zoom"
+                        title="Click to view Full Image "
+                        href="https://jcbprof.ru/image/cache/webp/catalog/1690423994_myskillsconnect-com-p-ekskavator-pogruzchik-new-holland-115-foto-18-1040x324.webp"
+                        data-lightbox="example-set"
+                      >
+                        <i class="fa fa-search-plus"></i>
+                      </a>
+                      <a class="icon readmore_link" title="Click to view Read More " href="https://jcbprof.ru/kody-neispravnostej-tekhniki-new-holland"><i class="fa fa-link"></i></a>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="blog-right">
+                  <div class="date-time"><i class="fa fa-calendar"></i> 13.11.2023</div>
+                  <div class="view-blog">
+                    <h4><a href="https://jcbprof.ru/kody-neispravnostej-tekhniki-new-holland">Коды неисправностей техники New Holland</a></h4>
+                    <div class="blog-desc">Техника New Holland - это один из лидеров в производстве сельскохозяйственной техники, такой как тра...</div>
+                    <div class="read-more">
+                      <a href="https://jcbprof.ru/kody-neispravnostej-tekhniki-new-holland"> <i class="fa fa-link"></i> Читать далее...</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="blog-item">
+              <div class="product-block">
+                <div class="blog-left">
+                  <div class="blog-image">
+                    <img src="https://jcbprof.ru/image/cache/webp/catalog/1690423994_myskillsconnect-com-p-ekskavator-pogruzchik-new-holland-115-foto-18-1040x324.webp" alt="Новости" title="Новости" class="img-thumbnail" />
+                    <div class="post-image-hover"></div>
+                    <p class="post_hover">
+                      <a
+                        class="icon zoom"
+                        title="Click to view Full Image "
+                        href="https://jcbprof.ru/image/cache/webp/catalog/1690423994_myskillsconnect-com-p-ekskavator-pogruzchik-new-holland-115-foto-18-1040x324.webp"
+                        data-lightbox="example-set"
+                      >
+                        <i class="fa fa-search-plus"></i>
+                      </a>
+                      <a class="icon readmore_link" title="Click to view Read More " href="https://jcbprof.ru/kody-neispravnostej-tekhniki-new-holland"><i class="fa fa-link"></i></a>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="blog-right">
+                  <div class="date-time"><i class="fa fa-calendar"></i> 13.11.2023</div>
+                  <div class="view-blog">
+                    <h4><a href="https://jcbprof.ru/kody-neispravnostej-tekhniki-new-holland">Коды неисправностей техники New Holland</a></h4>
+                    <div class="blog-desc">Техника New Holland - это один из лидеров в производстве сельскохозяйственной техники, такой как тра...</div>
+                    <div class="read-more">
+                      <a href="https://jcbprof.ru/kody-neispravnostej-tekhniki-new-holland"> <i class="fa fa-link"></i> Читать далее...</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="blog-item">
+              <div class="product-block">
+                <div class="blog-left">
+                  <div class="blog-image">
+                    <img src="https://jcbprof.ru/image/cache/webp/catalog/1690423994_myskillsconnect-com-p-ekskavator-pogruzchik-new-holland-115-foto-18-1040x324.webp" alt="Новости" title="Новости" class="img-thumbnail" />
+                    <div class="post-image-hover"></div>
+                    <p class="post_hover">
+                      <a
+                        class="icon zoom"
+                        title="Click to view Full Image "
+                        href="https://jcbprof.ru/image/cache/webp/catalog/1690423994_myskillsconnect-com-p-ekskavator-pogruzchik-new-holland-115-foto-18-1040x324.webp"
+                        data-lightbox="example-set"
+                      >
+                        <i class="fa fa-search-plus"></i>
+                      </a>
+                      <a class="icon readmore_link" title="Click to view Read More " href="https://jcbprof.ru/kody-neispravnostej-tekhniki-new-holland"><i class="fa fa-link"></i></a>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="blog-right">
+                  <div class="date-time"><i class="fa fa-calendar"></i> 13.11.2023</div>
+                  <div class="view-blog">
+                    <h4><a href="https://jcbprof.ru/kody-neispravnostej-tekhniki-new-holland">Коды неисправностей техники New Holland</a></h4>
+                    <div class="blog-desc">Техника New Holland - это один из лидеров в производстве сельскохозяйственной техники, такой как тра...</div>
+                    <div class="read-more">
+                      <a href="https://jcbprof.ru/kody-neispravnostej-tekhniki-new-holland"> <i class="fa fa-link"></i> Читать далее...</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="blog-item">
+              <div class="product-block">
+                <div class="blog-left">
+                  <div class="blog-image">
+                    <img src="https://jcbprof.ru/image/cache/webp/catalog/1690423994_myskillsconnect-com-p-ekskavator-pogruzchik-new-holland-115-foto-18-1040x324.webp" alt="Новости" title="Новости" class="img-thumbnail" />
+                    <div class="post-image-hover"></div>
+                    <p class="post_hover">
+                      <a
+                        class="icon zoom"
+                        title="Click to view Full Image "
+                        href="https://jcbprof.ru/image/cache/webp/catalog/1690423994_myskillsconnect-com-p-ekskavator-pogruzchik-new-holland-115-foto-18-1040x324.webp"
+                        data-lightbox="example-set"
+                      >
+                        <i class="fa fa-search-plus"></i>
+                      </a>
+                      <a class="icon readmore_link" title="Click to view Read More " href="https://jcbprof.ru/kody-neispravnostej-tekhniki-new-holland"><i class="fa fa-link"></i></a>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="blog-right">
+                  <div class="date-time"><i class="fa fa-calendar"></i> 13.11.2023</div>
+                  <div class="view-blog">
+                    <h4><a href="https://jcbprof.ru/kody-neispravnostej-tekhniki-new-holland">Коды неисправностей техники New Holland</a></h4>
+                    <div class="blog-desc">Техника New Holland - это один из лидеров в производстве сельскохозяйственной техники, такой как тра...</div>
+                    <div class="read-more">
+                      <a href="https://jcbprof.ru/kody-neispravnostej-tekhniki-new-holland"> <i class="fa fa-link"></i> Читать далее...</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $(".blogcarousel").owlCarousel({
+        items: 3,
+        autoPlay: false,
+        singleItem: false,
+        navigation: true,
+        navigationText: ['<i class="fa fa-chevron-left fa-5x"></i>', '<i class="fa fa-chevron-right fa-5x"></i>'],
+        pagination: true,
+        itemsDesktop: [991, 2],
+        itemsDesktopSmall: [543, 1],
+      });
+    });
+  </script>
+
+  <div id="wdcmssubbanner" class="bottom-to-top hb-animate-element hb-in-viewport">
+    <div class="container">
+      <div class="row">
+        <div class="wdcmssubbanner">
+          <div class="wdsubbanner-img1 wdsubbanner">
+            <div class="wdright-wdsubbanner-content">
+              <a href="#"><img class="image" title="subbanner-01" src="image/catalog/SubBanner-01.jpg" alt="subbanner-01" /> </a>
+              <div class="subbanner-content left">
+                <div class="title">У нас открылся новый магазин!</div>
+                <div class="desc">Ждем в гости по адресу: г. Москва, Окружной пр., 12</div>
+                <div class="shop-now btn"><a target="_blank" href="https://yandex.ru/maps/-/CCUJFCr7OA" class="btn-secondary">Посмотреть на карте</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-{{ footer }}
+
 
 
 
 <script type="text/javascript">
-$(document).ready(function(){
+  $(document).ready(function(){
     $('.service-area-carousel').owlCarousel({
-            items: 4,
-            autoPlay: true,
-            singleItem: false,
-            navigation: true,
-            navigationText: ['<i class="fa fa-chevron-left fa-5x"></i>', '<i class="fa fa-chevron-right fa-5x"></i>'],
-            pagination: false,
-            itemsDesktop : [1500,4],
-            itemsDesktopSmall:[1199,3],
-            itemsTablet :	[733,2],
-            itemsTabletSmall : [575, 1],
-            // itemsMobile: [479, 2]
-        });
+        items: 4,
+        autoPlay: true,
+        singleItem: false,
+        navigation: true,
+        navigationText: ['<i class="fa fa-chevron-left fa-5x"></i>', '<i class="fa fa-chevron-right fa-5x"></i>'],
+        pagination: false,
+        itemsDesktop : [1500,4],
+        itemsDesktopSmall:[1199,3],
+        itemsTablet :	[733,2],
+        itemsTabletSmall : [575, 1],
+        // itemsMobile: [479, 2]
+    });
 
-         $('#wdcmsbanner-carousel').owlCarousel({
+      $('#wdcmsbanner-carousel').owlCarousel({
+        items: 5,
+        autoPlay: true,
+        singleItem: false,
+        navigation: true,
+        navigationText: ['<i class="fa fa-chevron-left fa-5x"></i>', '<i class="fa fa-chevron-right fa-5x"></i>'],
+        pagination: false,
+        itemsDesktop : [1500,5],
+        itemsDesktopSmall:[1199,4],
+        itemsTablet :	[991,3],
+        itemsTabletSmall : [543, 2],
+        itemsMobile: [479, 2]
+    });
+    function productCarousel() { 
+      $("#content .product-carousel-custom").each(function() {
+        const $this = $(this);
+        $(this).owlCarousel({
             items: 5,
             autoPlay: true,
             singleItem: false,
@@ -62,5 +1354,44 @@ $(document).ready(function(){
             itemsTabletSmall : [543, 2],
             itemsMobile: [479, 2]
         });
-    });	
+        var nextButton = $(this).parent().find('.next');
+        var prevButton = $(this).parent().find('.prev');
+        nextButton.click(function(){
+          $this.trigger("next.owl.carousel")
+        })
+        prevButton.click(function(){
+          
+          $this.trigger("prev.owl.carousel")
+        })
+      });
+    }
+    productCarousel()
+    function initHeroSlider() { 
+      $(".hero_banners_slider ").each(function() {
+        const $this = $(this);
+        $(this).owlCarousel({
+            items: 1,
+            autoPlay: true,
+            singleItem: false,
+            navigation: false,
+            pagination: true,
+            dots: true
+        });
+        var nextButton = $(this).parent().find('.next');
+        var prevButton = $(this).parent().find('.prev');
+        nextButton.click(function(){
+          $this.trigger("next.owl.carousel")
+        })
+        prevButton.click(function(){
+          
+          $this.trigger("prev.owl.carousel")
+        })
+      });
+    }
+    initHeroSlider()
+  });	
 </script>
+{{ footer }}
+
+
+

@@ -74,11 +74,11 @@
   }
   // Socials
   // Container
-  div.container{
-    width: 1400px;
+  div.dl_container{
+    max-width: 1350px;
     margin: 0 auto;
-    @media(max-width: 1680px){
-      width: 1300px;
+    @media(max-width: 1200px){
+      max-width: 1170px;
     }
     @media(max-width: 1440px){
       width: 1200px;
