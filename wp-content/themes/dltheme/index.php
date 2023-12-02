@@ -9,7 +9,7 @@
 
 <main class="dl_theme page_wrapper">
   <section class="hero">
-    <div class="container">
+    <div class="dl_container">
       <div class="hero_grid">
         <div class="hero_banner left">
           <figure>
@@ -128,7 +128,7 @@
     </div>
   </section>
   <section class="benefits">
-    <div class="container">
+    <div class="dl_container">
       <div class="section_title">Наши преимущества</div>
       <div class="block_wrap">
         <div class="benefits_list">
@@ -173,7 +173,7 @@
     </div>
   </section>
   <section class="categories_list">
-    <div class="container">
+    <div class="dl_container">
       <div class="section_title">Каталог запчастей для спецтехники</div>
       <div class="categories_catalog">
         <div class="catalog_item"></div>
@@ -181,9 +181,9 @@
     </div>
   </section>
   <section class="custom_banners">
-    <div class="container">
+    <div class="dl_container">
       <div class="banner_slider_wrap">
-        <div class="banner_slider">
+        <div class="dl_banner_slider">
           <div class="banner">
             <figure>
               <img src="catalog/view/theme/Gobazar/image/images/banner.jpg" alt="">
@@ -213,7 +213,7 @@
     </div>
   </section>
   <section class="brands">
-    <div class="containr">
+    <div class="dl_container">
       <div class="section_title">Популярные бренды</div>
       <div class="brands_list">
         <div class="brand_item">

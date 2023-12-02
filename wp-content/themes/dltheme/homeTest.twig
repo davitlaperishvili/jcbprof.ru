@@ -1,7 +1,7 @@
 {{ header }}
 <main class="dl_theme page_wrapper">
   <section class="hero">
-    <div class="container">
+    <div class=" dl_container">
       <div class="hero_grid">
         <div class="hero_banner left">
           <figure>
@@ -107,7 +107,7 @@
         </div>
         <div class="hero_banner right">
           <figure>
-            <img src="catalog/view/theme/Gobazar/image/images/hero1.jpg" alt="">
+            <img src="catalog/view/theme/Gobazar/image/images/hero2.jpg" alt="">
           </figure>
           <div class="banner_content">
             <div class="text title">Новые товары в распродаже</div>
@@ -120,7 +120,7 @@
     </div>
   </section>
   <section class="benefits">
-    <div class="container">
+    <div class=" dl_container">
       <div class="section_title">Наши преимущества</div>
       <div class="block_wrap">
         <div class="benefits_list">
@@ -165,7 +165,7 @@
     </div>
   </section>
   <section class="categories_list">
-    <div class="container">
+    <div class=" dl_container">
       <div class="section_title">Каталог запчастей для спецтехники</div>
       <div class="categories_catalog">
         <div class="catalog_item"></div>
@@ -173,9 +173,9 @@
     </div>
   </section>
   <section class="custom_banners">
-    <div class="container">
+    <div class=" dl_container">
       <div class="banner_slider_wrap">
-        <div class="banner_slider">
+        <div class="dl_banner_slider">
           <div class="banner">
             <figure>
               <img src="catalog/view/theme/Gobazar/image/images/banner.jpg" alt="">
@@ -189,7 +189,7 @@
               <img src="catalog/view/theme/Gobazar/image/images/banner.jpg" alt="">
             </figure>
             <div class="banner_content">
-              <div class="banner_text"><span>Диски колеса на JCB Диски колеса на JCB</span>Всего <span>10 750 ₽</span></div>
+              <div class="banner_text"><span>Диски колеса на JCB </span>Всего <span>10 750 ₽</span></div>
             </div>
           </div>
           <div class="banner">
@@ -197,7 +197,7 @@
               <img src="catalog/view/theme/Gobazar/image/images/banner.jpg" alt="">
             </figure>
             <div class="banner_content">
-              <div class="banner_text"><span>Диски колеса на JCB</span>Всего <span>10 75000 ₽</span></div>
+              <div class="banner_text"><span>Диски колеса на JCB </span>Всего <span>10 750 ₽</span></div>
             </div>
           </div>
         </div>
@@ -205,7 +205,7 @@
     </div>
   </section>
   <section class="brands">
-    <div class="containr">
+    <div class=" dl_container">
       <div class="section_title">Популярные бренды</div>
       <div class="brands_list">
         <div class="brand_item">
@@ -264,8 +264,9 @@
 </main>
 <div id="content">
   <div class="box ProductbyCategory bottom-to-top hb-animate-element">
-    <div class="container">
+    <div class=" dl_container">
       <div class="row">
+      <div class="dl_theme"><div class="section_title">Новинки, актуальные предложения</div></div>
         <div class="tab-head">
           <div class="hometab-heading box-heading">Новинки, актуальные предложения</div>
           <div id="tabss" class="htabs">
@@ -1132,9 +1133,9 @@
   </script>
 
   <div class="box webdigifyblog bottom-to-top hb-animate-element">
-    <div class="container">
+    <div class=" dl_container">
       <div class="row">
-        <div class="box-heading">Новости</div>
+        <div class="dl_theme"><div class="section_title">Новости</div></div>
         <div class="box-content">
           <div class="box-product owl-carousel blogcarousel" id="blog-carousel">
             <div class="blog-item">
@@ -1287,7 +1288,7 @@
   </script>
 
   <div id="wdcmssubbanner" class="bottom-to-top hb-animate-element hb-in-viewport">
-    <div class="container">
+    <div class=" dl_container">
       <div class="row">
         <div class="wdcmssubbanner">
           <div class="wdsubbanner-img1 wdsubbanner">
@@ -1367,12 +1368,12 @@
     }
     productCarousel()
     function initHeroSlider() { 
-      $(".hero_banners_slider ").each(function() {
+      $(".hero_banners_slider, .dl_banner_slider ").each(function() {
         const $this = $(this);
         $(this).owlCarousel({
             items: 1,
             autoPlay: true,
-            singleItem: false,
+            singleItem: true,
             navigation: false,
             pagination: true,
             dots: true
@@ -1387,6 +1388,20 @@
           $this.trigger("prev.owl.carousel")
         })
       });
+      if($(window).width() < 1024 ){
+        $(".brands_list").each(function() {
+          const $this = $(this);
+          $(this).owlCarousel({
+              items: 1,
+              autoPlay: true,
+              singleItem: true,
+              navigation: true,
+              navigationText: ['<i class="ri-arrow-left-s-line"></i>', '<i class="ri-arrow-right-s-line"></i>'],
+              pagination: false,
+              dots: false
+          });
+        });
+      }
     }
     initHeroSlider()
   });	

@@ -1,0 +1,22 @@
+section.brands{
+  margin-bottom: 40px;
+  .brands_list{
+    display: grid;
+    grid-gap: 16px;
+    grid-template-columns: repeat(5, 1fr);
+    @media(max-width: 1024px){
+      grid-template-columns: 1fr;
+    }
+    .brand_item{
+      padding: 15px;
+      background-color: $cgray;
+      border-radius: 5px;
+      figure{
+        width: 100%;
+        img{
+          width: 100%;
+        }
+      }
+    }
+  }
+}
