@@ -3,6 +3,8 @@
   div.dl_container{
     margin-right: auto;
     margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
     width: 100%;
     @media(min-width: 544px){
       max-width: 100%;
@@ -144,5 +146,8 @@
     font-size: 34px;
     font-weight: 700;
     text-align: center;
+    @media(max-width: 1024px){
+      font-size: 20px;
+    }
   }
 }
