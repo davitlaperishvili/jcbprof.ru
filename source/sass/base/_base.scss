@@ -142,12 +142,21 @@
     }
   }
   .section_title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
     margin-bottom: 30px;
     font-size: 34px;
     font-weight: 700;
-    text-align: center;
     @media(max-width: 1024px){
       font-size: 20px;
+      align-items: flex-start;
+    }
+    img{
+      @media(max-width: 1024px){
+        width: 25px;
+      }
     }
   }
 }

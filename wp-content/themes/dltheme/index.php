@@ -16,9 +16,12 @@
             <img src="catalog/view/theme/Gobazar/image/images/hero1.jpg" alt="">
           </figure>
           <div class="banner_content">
-            <div class="text"><span>13 дней</span> осталось</div>
-            <div class="banner_button text">
-              <a href="#">Перейти в каталог</a>
+            <div class="text title">Распродажа</div>
+            <div class="wrap">
+              <div class="text"><span>13 дней</span> <br> осталось</div>
+              <div class="banner_button text">
+                <a href="#">Перейти в каталог</a>
+              </div>
             </div>
           </div>
         </div>
@@ -129,7 +132,7 @@
   </section>
   <section class="benefits">
     <div class=" dl_container">
-      <div class="section_title">Наши преимущества</div>
+      <h2 class="section_title">Наши преимущества</h2>
       <div class="block_wrap">
         <div class="benefits_list">
           <div class="benefit_item">
@@ -166,10 +169,10 @@
   </section>
   <section class="categories_list">
     <div class=" dl_container">
-      <div class="section_title">Каталог запчастей для спецтехники</div>
+      <h1 class="section_title">Каталог запчастей для спецтехники</h1>
       <div class="categories_catalog grid">
         <div class="list_row">
-          <div class="grid grid-5">
+          <div class="grid grid-6">
             <div class="category_item">
               <div class="category_item_image">
                 <a href="#">
@@ -179,61 +182,63 @@
               </div>
             </div>
           </div>
-          <div class="grid grid-3-5">
-            <div class="category_item">
-              <div class="category_item_list">
-                <ul>
-                  <li>
-                    <a href="#">Аутригеры</a>
-                  </li>
-                  <li>
-                    <a href="#">Болты навесного оборудования</a>
-                  </li>
-                  <li>
-                    <a href="#">Быстросъемные соединения</a>
-                  </li>
-                  <li>
-                    <a href="#">Вкладыши телескопа</a>
-                  </li>
-                  <li>
-                    <a href="#">Втулки</a>
-                  </li>
-                  <li>
-                    <a href="#">Втулки гидромолота</a>
-                  </li>
-                  <li>
-                    <a href="#">Зубья ковша</a>
-                  </li>
-                </ul>
+          <div class="list_row grid grid-6 scroll_on_mobile">
+            <div class="grid grid-6">
+              <div class="category_item">
+                <div class="category_item_list">
+                  <ul>
+                    <li>
+                      <a href="#">Аутригеры</a>
+                    </li>
+                    <li>
+                      <a href="#">Болты навесного оборудования</a>
+                    </li>
+                    <li>
+                      <a href="#">Быстросъемные соединения</a>
+                    </li>
+                    <li>
+                      <a href="#">Вкладыши телескопа</a>
+                    </li>
+                    <li>
+                      <a href="#">Втулки</a>
+                    </li>
+                    <li>
+                      <a href="#">Втулки гидромолота</a>
+                    </li>
+                    <li>
+                      <a href="#">Зубья ковша</a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="grid grid-3-5">
-            <div class="category_item">
-              <div class="category_item_list">
-                <ul>
-                  <li>
-                    <a href="#">Аутригеры</a>
-                  </li>
-                  <li>
-                    <a href="#">Каретки</a>
-                  </li>
-                  <li>
-                    <a href="#">Ковши</a>
-                  </li>
-                  <li>
-                    <a href="#">Ножи</a>
-                  </li>
-                  <li>
-                    <a href="#">Пальцы</a>
-                  </li>
-                </ul>
+            <div class="grid grid-6">
+              <div class="category_item">
+                <div class="category_item_list">
+                  <ul>
+                    <li>
+                      <a href="#">Аутригеры</a>
+                    </li>
+                    <li>
+                      <a href="#">Каретки</a>
+                    </li>
+                    <li>
+                      <a href="#">Ковши</a>
+                    </li>
+                    <li>
+                      <a href="#">Ножи</a>
+                    </li>
+                    <li>
+                      <a href="#">Пальцы</a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
         </div>
         <div class="list_row">
-          <div class="grid grid-1">
+          <div class="grid grid-3">
             <div class="category_item">
               <div class="category_item_image filled">
                 <a href="#">
@@ -243,7 +248,7 @@
               </div>
             </div>
           </div>
-          <div class="grid grid-7-5">
+          <div class="grid grid-6">
             <div class="category_item">
               <div class="category_item_image title_first">
                 <a href="#">
@@ -253,7 +258,7 @@
               </div>
             </div>
           </div>
-          <div class="grid grid-3-5">
+          <div class="grid grid-3">
             <div class="category_item">
               <div class="category_item_list">
                 <ul>
@@ -272,17 +277,17 @@
           </div>
         </div>
         <div class="list_row">
-          <div class="grid grid-5">
+          <div class="grid grid-6">
             <div class="category_item">
               <div class="category_item_image">
                 <a href="#">
-                  <img src="catalog/view/theme/Gobazar/image/images/cat4.png" alt="">
+                  <img src="catalog/view/theme/Gobazar/image/images/cat5.png" alt="">
                   <span>Ремкомплекты</span>
                 </a>
               </div>
             </div>
           </div>
-          <div class="grid grid-3-5">
+          <div class="grid grid-3">
             <div class="category_item">
               <div class="category_item_list">
                 <ul>
@@ -304,14 +309,11 @@
                   <li>
                     <a href="#">Втулки гидромолота</a>
                   </li>
-                  <li>
-                    <a href="#">Зубья ковша</a>
-                  </li>
                 </ul>
               </div>
             </div>
           </div>
-          <div class="grid grid-3-5">
+          <div class="grid grid-3">
             <div class="category_item">
               <div class="category_item_list filled image">
                 <ul>
@@ -326,70 +328,72 @@
                   </li>
                 </ul>
                 <figure>
-                  <img src="catalog/view/theme/Gobazar/image/images/cat5.png" alt="">
+                  <img src="catalog/view/theme/Gobazar/image/images/cat4.png" alt="">
                 </figure>
               </div>
             </div>
           </div>
         </div>
         <div class="list_row">
-          <div class="grid grid-3-5">
-            <div class="category_item">
-              <div class="category_item_list">
-                <ul>
-                  <li>
-                    <a href="#">Аутригеры</a>
-                  </li>
-                  <li>
-                    <a href="#">Болты навесного оборудования</a>
-                  </li>
-                  <li>
-                    <a href="#">Быстросъемные соединения</a>
-                  </li>
-                  <li>
-                    <a href="#">Вкладыши телескопа</a>
-                  </li>
-                  <li>
-                    <a href="#">Втулки</a>
-                  </li>
-                  <li>
-                    <a href="#">Втулки гидромолота</a>
-                  </li>
-                  <li>
-                    <a href="#">Зубья ковша</a>
-                  </li>
-                </ul>
+          <div class="list_row grid grid-6 scroll_on_mobile">
+            <div class="grid grid-6">
+              <div class="category_item">
+                <div class="category_item_list">
+                  <ul>
+                    <li>
+                      <a href="#">Аутригеры</a>
+                    </li>
+                    <li>
+                      <a href="#">Болты навесного оборудования</a>
+                    </li>
+                    <li>
+                      <a href="#">Быстросъемные соединения</a>
+                    </li>
+                    <li>
+                      <a href="#">Вкладыши телескопа</a>
+                    </li>
+                    <li>
+                      <a href="#">Втулки</a>
+                    </li>
+                    <li>
+                      <a href="#">Втулки гидромолота</a>
+                    </li>
+                    <li>
+                      <a href="#">Зубья ковша</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="grid grid-6">
+              <div class="category_item">
+                <div class="category_item_list">
+                  <ul>
+                    <li>
+                      <a href="#">Аутригеры</a>
+                    </li>
+                    <li>
+                      <a href="#">Каретки</a>
+                    </li>
+                    <li>
+                      <a href="#">Ковши</a>
+                    </li>
+                    <li>
+                      <a href="#">Ножи</a>
+                    </li>
+                    <li>
+                      <a href="#">Пальцы</a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
-          <div class="grid grid-3-5">
-            <div class="category_item">
-              <div class="category_item_list">
-                <ul>
-                  <li>
-                    <a href="#">Аутригеры</a>
-                  </li>
-                  <li>
-                    <a href="#">Каретки</a>
-                  </li>
-                  <li>
-                    <a href="#">Ковши</a>
-                  </li>
-                  <li>
-                    <a href="#">Ножи</a>
-                  </li>
-                  <li>
-                    <a href="#">Пальцы</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="grid grid-5">
+          <div class="grid grid-6">
             <div class="category_item">
               <div class="category_item_image title_first">
                 <a href="#">
-                  <img src="catalog/view/theme/Gobazar/image/images/cat1.png" alt="">
+                  <img src="catalog/view/theme/Gobazar/image/images/cat6.png" alt="">
                   <span>Гидравлическая система</span>
                 </a>
               </div>
@@ -529,7 +533,10 @@
   </section>
   <section class="brands">
     <div class=" dl_container">
-      <div class="section_title">Популярные бренды</div>
+      <h2 class="section_title">
+        <img src="catalog/view/theme/Gobazar/image/images/badge.png" alt="">
+        Популярные бренды
+      </h2>
       <div class="brands_list">
         <div class="brand_item">
           <figure>

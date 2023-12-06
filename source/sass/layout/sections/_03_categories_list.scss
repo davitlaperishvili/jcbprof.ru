@@ -144,6 +144,21 @@ section.categories_list{
     .grid-12{
       width: calc((100% / 12) * 12);
     }
+    &.scroll_on_mobile{
+      margin-bottom: 0;
+      @media(max-width: 1024px){
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        width: max-content !important;
+        gap: 10px;
+        .grid{
+          width: 80% !important;
+          min-width: 80% !important;
+        }
+      }
+    }
   }
   .category_item{
     background-color: $cgray;
@@ -168,6 +183,12 @@ section.categories_list{
           color: $cbase;
           @media(max-width: 1024px){
             font-size: 15px;
+          }
+        }
+        &:hover{
+          background-color: $ccorp;
+          span{
+            color: $cwhite;
           }
         }
       }

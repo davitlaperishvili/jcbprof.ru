@@ -25,12 +25,16 @@ section.benefits{
           padding: 20px;
           background-color: $cwhite;
           border-radius: 5px;
+          transition: 0.4s;
           @media(max-width: 1024px){
             flex-direction: row;
             flex-wrap: wrap;
             align-items: center;
             padding: 15px;
             gap: 15px;
+          }
+          &:hover{
+            background-color: transparent;
           }
           figure{
             display: flex;
