@@ -1,0 +1,81 @@
+<div onclick="StopPls()" class="box-category-top">
+	<div class="box-heading">{{ heading_subtitle }} <i class="fa fa-angle-down" aria-hidden="true"></i></div>
+    </div>
+  <div id="nav-one" class="box-content-category" style="display: none;">
+<ul class="dropmenu">
+<div class="h3 text-center"><span>Меню</span></div>
+  {% for category in categories %}
+    	{% if category.children %}
+			<li class="top_level expandable dropdown active"><a href="{{ category.href }}" class="custom-link-menu">{{ category.name }}</a>
+			<div class="hitarea expandable-hitarea" data-toggle="collapse" data-target="#collapse{{category.id}}" aria-expanded="true" aria-controls="collapseOne"></div>
+			<div class="megamenu column">
+            <div id="collapse{{category.id}}" class="collapse">
+              {% for children in category.children|batch(category.children|length / category.column|round(1, 'ceil')) %}
+				<ul class="list-unstyled childs_1">
+                {% for child in children %}
+					<!-- 2 Level Sub Categories START -->
+					{% if child.childs %}
+						
+					  <a href="{{ child.href }}" class="custom-link-menu">{{ child.name }}</a><div class="hitarea expandable-hitarea" data-toggle="collapse" data-target="#collapse{{category.id}}_{{child.id}}" aria-expanded="true" aria-controls="collapseTwo"></div>
+						  <div class="megamenu column">
+						  <div id="collapse{{category.id}}_{{child.id}}" class="collapse">
+			              {% for childs_col in child.childs|batch(child.childs|length / child.column|round(1, 'ceil')) %}
+							<ul class="list-unstyled childs_1">
+							  {% for childs_2 in childs_col %}
+								<li ><a class="childs_2" href="{{ childs_2.href }}">{{ childs_2.name }}</a></li>
+							  {% endfor %}
+							</ul>
+						  {% endfor %}
+						  </div>
+						  </div>
+					{% else %}
+					  <li><a href="{{ child.href }}">{{ child.name }}</a></li>
+					{% endif %}
+					<!-- 2 Level Sub Categories END -->
+                {% endfor %}
+			    </ul>
+              {% endfor %}
+            </div>
+			</div>
+			</li>
+        {% else %}
+			<li class="top_level"><a href="{{ category.href }}"> {{ category.name }}</a></li>
+        {% endif %}
+        {% endfor %}
+		{% if blog_enable %}
+       	<li> <a href="{{ all_blogs }}">{{ text_blog }}</a></li>       
+		{% endif %}
+<li class="top_level"><a href="/about_us">О компании</a></li>
+ </ul>
+<div id="" class="header-cms-block text-center">
+	<span class="content">
+		<span class="service-title">Позвонить нам:</span>
+		<a href="tel:8 (800) 550 26-77" class="contact-info lptracker_phone">8 (800) 550 26-77</a>
+	</span>
+  <span class="content">
+		<span class="service-title">Адрес:</span>
+		<a href="https://yandex.ru/maps/-/CCUFqIRx1A" class="contact-info address1">г. Москва, Окружной пр., 12</a>
+	</span>
+  <span class="content">
+		<span class="service-title">E-mail</span>
+		<a href="mailto:jcbprof@spectehrus.ru" class="contact-info email">jcbprof@spectehrus.ru</a>
+	</span>
+</div>
+  </div>
+
+<script>
+jQuery(function($){
+	$(document).mouseup( function(e){ // событие клика по веб-документу
+		var div = $( "#nav-one" ); // тут указываем ID элемента
+		if ( !div.is(e.target) // если клик был не по нашему блоку
+		    && div.has(e.target).length === 0 ) { 
+		if(div.css('display') !== 'none'){// и не по его дочерним элементам
+			div.css("display", "none");; // скрываем его
+		}
+		}
+	});
+});
+  </script>
+
+
+

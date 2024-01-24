@@ -1,0 +1,77 @@
+<section class="brands">
+    <div class=" dl_container">
+      <h2 class="section_title">
+        <img src="catalog/view/theme/Gobazar/image/images/badge.png" alt="">
+        Популярные бренды
+      </h2>
+      {# {% for manufacturer in manufacturers %}
+				<div class="brand-name">
+				<a href="{{ manufacturer.href }}">
+					{% if manufacturer.thumb !='image/' %}
+				<img src="{{ manufacturer.thumb }}" alt="brands" class="img-responsive reg-image"/>
+					{% endif %}
+					<span>{{ manufacturer.name }}</span>
+				</a>
+				</div>
+				{% endfor %} #}
+
+
+      <div class="brands_list owl-carousel">
+{% for manufacturer in manufacturers %}
+        <div class="brand_item">
+          <figure>
+            <a href="{{ manufacturer.href }}">
+              <img src="{{ manufacturer.thumb }}" alt="">
+            </a>
+          </figure>
+        </div>
+{% endfor %}
+        {# <div class="brand_item">
+          <figure>
+            <img src="catalog/view/theme/Gobazar/image/images/client2.jpg" alt="">
+          </figure>
+        </div>
+        <div class="brand_item">
+          <figure>
+            <img src="catalog/view/theme/Gobazar/image/images/client3.jpg" alt="">
+          </figure>
+        </div>
+        <div class="brand_item">
+          <figure>
+            <img src="catalog/view/theme/Gobazar/image/images/client4.jpg" alt="">
+          </figure>
+        </div>
+        <div class="brand_item">
+          <figure>
+            <img src="catalog/view/theme/Gobazar/image/images/client5.jpg" alt="">
+          </figure>
+        </div>
+        <div class="brand_item">
+          <figure>
+            <img src="catalog/view/theme/Gobazar/image/images/client6.jpg" alt="">
+          </figure>
+        </div>
+        <div class="brand_item">
+          <figure>
+            <img src="catalog/view/theme/Gobazar/image/images/client7.jpg" alt="">
+          </figure>
+        </div>
+        <div class="brand_item">
+          <figure>
+            <img src="catalog/view/theme/Gobazar/image/images/client8.jpg" alt="">
+          </figure>
+        </div>
+        <div class="brand_item">
+          <figure>
+            <img src="catalog/view/theme/Gobazar/image/images/client9.jpg" alt="">
+          </figure>
+        </div>
+        <div class="brand_item">
+          <figure>
+            <img src="catalog/view/theme/Gobazar/image/images/client10.jpg" alt="">
+          </figure>
+        </div> #}
+      </div>
+    </div>
+  </section>
+{# </main> #}

@@ -1,0 +1,139 @@
+
+    <div class="hero_banners_slider_wrap">
+            <div class="hero_banners_slider owl-carousel">
+            {% for banner in newbanners %}
+    {# {% for banner in banners %} #}
+                <div class="hero_slider_item">
+                <figure>
+                    <img src="{{ banner.image }}" alt="">
+                </figure>
+                <div class="banner_content">
+                    <div class="banner_title">{{ banner.first }} <br> <span {% if banner.color %} style="color: {{ banner.color }}"{% endif %}>{{ banner.second }}</span> </div>
+                    <div class="banner_subtitle">{{ banner.subtitle }}</div>
+                    <div class="banner_points">
+                    {{ banner.bottom }}
+                    {# <ul>
+                        <li>
+                        <img src="catalog/view/theme/Gobazar/image/images/point1.svg" alt="">
+                        <span>Заказы 24/7</span>
+                        </li>
+                        <li>
+                        <img src="catalog/view/theme/Gobazar/image/images/point2.svg" alt="">
+                        <span>Помощь в подборе</span>
+                        </li>
+                        <li>
+                        <img src="catalog/view/theme/Gobazar/image/images/point3.svg" alt="">
+                        <span>Быстрая отгрузка</span>
+                        </li>
+                        <li>
+                        <img src="catalog/view/theme/Gobazar/image/images/point4.svg" alt="">
+                        <span>Гарантия</span>
+                        </li>
+                    </ul> #}
+                    </div>
+                </div>
+                </div>
+
+                {# <div class="hero_slider_item">
+                <figure>
+                    <img src="catalog/view/theme/Gobazar/image/images/hero_slide1.jpg" alt="">
+                </figure>
+                <div class="banner_content">
+                    <div class="banner_title">КАЧЕСТВО <br> <span>ПО ЛУЧШЕЙ ЦЕНЕ</span> </div>
+                    <div class="banner_subtitle">Более 2500 товаров</div>
+                    <div class="banner_points">
+                    <ul>
+                        <li>
+                        <img src="catalog/view/theme/Gobazar/image/images/point1.svg" alt="">
+                        <span>Заказы 24/7</span>
+                        </li>
+                        <li>
+                        <img src="catalog/view/theme/Gobazar/image/images/point2.svg" alt="">
+                        <span>Помощь в подборе</span>
+                        </li>
+                        <li>
+                        <img src="catalog/view/theme/Gobazar/image/images/point3.svg" alt="">
+                        <span>Быстрая отгрузка</span>
+                        </li>
+                        <li>
+                        <img src="catalog/view/theme/Gobazar/image/images/point4.svg" alt="">
+                        <span>Гарантия</span>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+                </div> #}
+                {# <div class="hero_slider_item">
+                <figure>
+                    <img src="catalog/view/theme/Gobazar/image/images/hero_slide1.jpg" alt="">
+                </figure>
+                <div class="banner_content">
+                    <div class="banner_title">КАЧЕСТВО <br> <span>ПО ЛУЧШЕЙ ЦЕНЕ</span> </div>
+                    <div class="banner_subtitle">Более 2500 товаров</div>
+                    <div class="banner_points">
+                    <ul>
+                        <li>
+                        <img src="catalog/view/theme/Gobazar/image/images/point1.svg" alt="">
+                        <span>Заказы 24/7</span>
+                        </li>
+                        <li>
+                        <img src="catalog/view/theme/Gobazar/image/images/point2.svg" alt="">
+                        <span>Помощь в подборе</span>
+                        </li>
+                        <li>
+                        <img src="catalog/view/theme/Gobazar/image/images/point3.svg" alt="">
+                        <span>Быстрая отгрузка</span>
+                        </li>
+                        <li>
+                        <img src="catalog/view/theme/Gobazar/image/images/point4.svg" alt="">
+                        <span>Гарантия</span>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+                </div> #}
+                    {# {% endfor %} #}
+{% endfor %}
+            </div>
+            </div>
+
+        
+<script type="text/javascript">
+        function initHeroSlider() { 
+      $(".hero_banners_slider, .dl_banner_slider ").each(function() {
+        const $this = $(this);
+        $(this).owlCarousel({
+            items: 1,
+            autoPlay: true,
+            singleItem: true,
+            navigation: false,
+            pagination: true,
+            dots: true
+        });
+        var nextButton = $(this).parent().find('.next');
+        var prevButton = $(this).parent().find('.prev');
+        nextButton.click(function(){
+          $this.trigger("next.owl.carousel")
+        })
+        prevButton.click(function(){
+          
+          $this.trigger("prev.owl.carousel")
+        })
+      });
+      if($(window).width() < 1024 ){
+        $(".brands_list").each(function() {
+          const $this = $(this);
+          $(this).owlCarousel({
+              items: 1,
+              autoPlay: true,
+              singleItem: true,
+              navigation: true,
+              navigationText: ['<i class="ri-arrow-left-s-line"></i>', '<i class="ri-arrow-right-s-line"></i>'],
+              pagination: false,
+              dots: false
+          });
+        });
+      }
+    }
+    initHeroSlider()
+</script>

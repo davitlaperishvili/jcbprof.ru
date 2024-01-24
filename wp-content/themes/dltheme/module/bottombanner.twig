@@ -1,0 +1,65 @@
+
+<section class="custom_banners">
+    <div class=" dl_container">
+      <div class="banner_slider_wrap">
+        <div class="dl_banner_slider">
+        {% for banner in newbanners %}
+          <div class="banner">
+            <div class="banner_image">
+              <figure>
+                <a href="{{ banner.link }}"><img src="{{ banner.image }}" alt="" class="banner_main"></a>
+              </figure>
+              <picture>
+                {{ banner.bottom }}
+              </picture>
+            </div>
+            <div class="banner_content">
+              <div class="banner_text"><span>{{ banner.title }}</span> Всего <span>{{ banner.subtitle }} ₽</span></div>
+            </div>
+          </div>
+        {% endfor %}
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<script type="text/javascript">
+  function initHeroSlider() { 
+      $(".hero_banners_slider, .dl_banner_slider ").each(function() {
+        const $this = $(this);
+        $(this).owlCarousel({
+            items: 1,
+            autoPlay: true,
+            singleItem: true,
+            navigation: false,
+            pagination: true,
+            dots: true
+        });
+        var nextButton = $(this).parent().find('.next');
+        var prevButton = $(this).parent().find('.prev');
+        nextButton.click(function(){
+          $this.trigger("next.owl.carousel")
+        })
+        prevButton.click(function(){
+          
+          $this.trigger("prev.owl.carousel")
+        })
+      });
+      if($(window).width() < 1024 ){
+        $(".brands_list").each(function() {
+          const $this = $(this);
+          $(this).owlCarousel({
+              items: 1,
+              autoPlay: true,
+              singleItem: true,
+              navigation: true,
+              navigationText: ['<i class="ri-arrow-left-s-line"></i>', '<i class="ri-arrow-right-s-line"></i>'],
+              pagination: false,
+              dots: false
+          });
+        });
+      }
+    }
+    initHeroSlider()
+  </script>

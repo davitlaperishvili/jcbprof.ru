@@ -593,5 +593,20 @@
   </section>
 </main>
 
+<script>
+  const navigation = document.querySelectorAll(".customNavigation a");
+  navigation.forEach( nav => {
+    nav.addEventListener("click", e => {
+      const target = e.target;
+      const parent = target.closest(".box-content");
+      if(e.target.classList.contains("prev")){
+        parent.querySelector(".owl-prev").click()
+      }
+      if(e.target.classList.contains("next")){
+        parent.querySelector(".owl-next").click()
+      }
+    })
+  })
+</script>
 </body>
 </html>

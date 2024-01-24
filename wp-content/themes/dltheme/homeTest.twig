@@ -3,7 +3,8 @@
   <section class="hero">
     <div class=" dl_container">
       <div class="hero_grid">
-        <div class="hero_banner left">
+      {{ content_top }}
+        {# <div class="hero_banner left">
           <figure>
             <img src="catalog/view/theme/Gobazar/image/images/hero1.jpg" alt="">
           </figure>
@@ -16,8 +17,8 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="hero_banners_slider_wrap">
+        </div> #}
+        {# <div class="hero_banners_slider_wrap">
           <div class="hero_banners_slider owl-carousel">
             <div class="hero_slider_item">
               <figure>
@@ -107,8 +108,8 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="hero_banner right">
+        </div> #}
+        {# <div class="hero_banner right">
           <figure>
             <img src="catalog/view/theme/Gobazar/image/images/hero2.jpg" alt="">
           </figure>
@@ -118,11 +119,12 @@
               <a href="#">Перейти в каталог</a>
             </div>
           </div>
-        </div>
+        </div> #}
       </div>
     </div>
   </section>
-  <section class="benefits">
+  {{ content_bottom }}
+  {# <section class="benefits">
     <div class=" dl_container">
       <h2 class="section_title">Наши преимущества</h2>
       <div class="block_wrap">
@@ -158,8 +160,8 @@
         </div>
       </div>
     </div>
-  </section>
-  <section class="categories_list">
+  </section> #}
+  {# <section class="categories_list">
     <div class=" dl_container">
       <h1 class="section_title">Каталог запчастей для спецтехники</h1>
       <div class="categories_catalog grid">
@@ -472,8 +474,8 @@
         </div>
       </div>
     </div>
-  </section>
-  <section class="custom_banners">
+  </section> #}
+  {# <section class="custom_banners">
     <div class=" dl_container">
       <div class="banner_slider_wrap">
         <div class="dl_banner_slider">
@@ -522,14 +524,28 @@
         </div>
       </div>
     </div>
-  </section>
-  <section class="brands">
+  </section> #}
+
+
+  {# {% for manufacturer in manufacturers %}
+				<div class="brand-name">
+				<a href="{{ manufacturer.href }}">
+					{% if manufacturer.thumb !='image/' %}
+				<img src="{{ manufacturer.thumb }}" alt="brands" class="img-responsive reg-image"/>
+					{% endif %}
+					<span>{{ manufacturer.name }}</span>
+				</a>
+				</div>
+				{% endfor %} #}
+
+
+  {# <section class="brands">
     <div class=" dl_container">
       <h2 class="section_title">
         <img src="catalog/view/theme/Gobazar/image/images/badge.png" alt="">
         Популярные бренды
       </h2>
-      <div class="brands_list">
+      <div class="brands_list owl-carousel">
         <div class="brand_item">
           <figure>
             <img src="catalog/view/theme/Gobazar/image/images/client1.jpg" alt="">
@@ -582,10 +598,12 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> #}
 </main>
+
 <div id="content">
-  <div class="box ProductbyCategory bottom-to-top hb-animate-element product_list_with_tabs">
+{{ content_bot }}
+  {# <div class="box ProductbyCategory bottom-to-top hb-animate-element product_list_with_tabs">
     <div class=" dl_container">
       <div class="row">
       <div class="dl_theme">
@@ -1453,9 +1471,9 @@
 
   <script>
     $("#tabss a").tabss();
-  </script>
+  </script> #}
 
-  <div class="box webdigifyblog bottom-to-top hb-animate-element">
+  {# <div class="box webdigifyblog bottom-to-top hb-animate-element">
     <div class=" dl_container">
       <div class="row">
         <div class="dl_theme">
@@ -1573,9 +1591,9 @@
         itemsDesktopSmall: [543, 1],
       });
     });
-  </script>
+  </script> #}
 
-  <div id="wdcmssubbanner" class="bottom-to-top hb-animate-element hb-in-viewport">
+  {# <div id="wdcmssubbanner" class="bottom-to-top hb-animate-element hb-in-viewport">
     <div class=" dl_container">
       <div class="row">
         <div class="wdcmssubbanner">
@@ -1592,7 +1610,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> #}
 </div>
 
 
@@ -1627,7 +1645,7 @@
         itemsTabletSmall : [543, 2],
         itemsMobile: [479, 2]
     });
-    function productCarousel() { 
+    {# function productCarousel() { 
       $("#content .product-carousel-custom").each(function() {
         const $this = $(this);
         $(this).owlCarousel({
@@ -1654,8 +1672,8 @@
         })
       });
     }
-    productCarousel()
-    function initHeroSlider() { 
+    productCarousel() #}
+    {# function initHeroSlider() { 
       $(".hero_banners_slider, .dl_banner_slider ").each(function() {
         const $this = $(this);
         $(this).owlCarousel({
@@ -1676,7 +1694,9 @@
           $this.trigger("prev.owl.carousel")
         })
       });
+        console.log("SCRIPT IS HERE")
       if($(window).width() < 1024 ){
+        console.log("IS MOBILE")
         $(".brands_list").each(function() {
           const $this = $(this);
           $(this).owlCarousel({
@@ -1691,7 +1711,7 @@
         });
       }
     }
-    initHeroSlider()
+    initHeroSlider() #}
   });	
 </script>
 {{ footer }}

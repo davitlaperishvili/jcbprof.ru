@@ -1,0 +1,13 @@
+{% for banner in newbanners %}
+<div class="hero_banner right">
+          <figure>
+            <img src="{{ banner.image }}" alt="">
+          </figure>
+          <div class="banner_content">
+            <div class="text title">{{ banner.title }}</div>
+            <div class="banner_button">
+              <a href="{{ banner.link }}">{{ banner.button }}</a>
+            </div>
+          </div>
+        </div>
+{% endfor %}
